@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appointment Booking - GlowwUp</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="auth-page">
+    <div class="auth-container">
+      <h2>Book Your Appointment</h2>
+      <p>Login or sign up to continue</p>
+      <div class="form-toggle">
+        <button onclick="toggleForm('login')">Login</button>
+        <button onclick="toggleForm('signup')">Sign Up</button>
+      </div>
+      <form id="login-form" class="auth-form">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" onclick="proceed(event)">Login</button>
+      </form>
+      <form id="signup-form" class="auth-form hidden">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Phone" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" onclick="proceed(event)">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
+  <main id="main-content" class="hidden">
+    <header class="top-navbar">
+      <div class="logo">book<span>it!</span></div>
+    </header>
+
+    <section class="booking-form-section">
+      <div class="booking-container">
+        <h2>Appointment Booking</h2>
+        <form class="booking-form">
+  <input type="text" placeholder="Full Name" required />
+  <input type="email" placeholder="Email Address" required />
+  
+  <select id="service-select" required>
+    <option value="">Select Service</option>
+    <option value="doctor">Doctor</option>
+    <option value="salon">Salon</option>
+    <option value="repair">Repair</option>
+  </select>
+
+  <input id="service-address" type="text" placeholder="Address" readonly />
+
+  <input type="date" required />
+  <input type="time" required />
+  <button type="submit">Book Appointment</button>
+</form>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Booking. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

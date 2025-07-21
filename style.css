@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #fff0f6;
+  color: #333;
+}
+
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ffdde1, #81bbd4);
+}
+
+.auth-container {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 350px;
+}
+
+.auth-container h2 {
+  margin-bottom: 0.5rem;
+}
+
+.form-toggle {
+  margin-top: 1rem;
+}
+
+.form-toggle button {
+  padding: 8px 14px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 6px;
+  background: #eee;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.auth-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.auth-form button {
+  background: #81bbd4;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.top-navbar {
+  background: #000;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  color: #ff69b4;
+}
+
+.booking-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  background: #fff0f6;
+}
+
+.booking-container {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.booking-form button {
+  background: #81bbd4;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.booking-form button:hover {
+  background: #81bbd4;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f5f5f5;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+body {
+  background: #fff0f6;
+}
